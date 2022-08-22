@@ -22,8 +22,9 @@ public class AddEmploy extends JFrame implements ActionListener
 		
 		try
 		{
-			Class.forName("org.postgresql.Driver");
-			cn = DriverManager.getConnection("jdbc:postgresql:project","postgres","");
+			// for mysql connectivity
+			Class.forName("com.mysql.cj.jdbc.Driverr");
+			cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","");
 		}
 		catch(Exception ep)
 		{
